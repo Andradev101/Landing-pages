@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body{
+    backdrop-filter: grayscale(90%) blur(5px);
+    background-image: url(https://images.pexels.com/photos/4099237/pexels-photo-4099237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 200px;
+    transition: all 0.5s;
+}
+.main-content img{
+    width: 220px;
+  }
+#name{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    color: rgb(0, 0, 0)
+}
+#bgcolor{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 139, 139, 0.637);
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+}
+#bg img {
+    filter: grayscale(1);
+    opacity: 0.2;
+}
+#content{
+    width: 100%;
+    height: 1200px;
+}
