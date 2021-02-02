@@ -1,0 +1,61 @@
+.products{
+    width: 70%;
+    background: linear-gradient(45deg, rgba(255,122,128,1) 0%, rgba(255,62,101,1) 100%);
+}
+.products{
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    animation: left-appear 0.5s ease normal backwards;
+}
+.products .productphoto, .producttext{
+    border-radius: 10px;
+    margin: 0 5px 0 5px;
+    width: 50%;
+}
+.productphoto{
+    overflow: hidden;
+}
+.productphoto img{
+    width: 100%;
+    height: auto;
+}
+.producttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.producttext p{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+@media screen and (max-width: 900px){
+    .products{
+        height: initial;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .products .productphoto{
+        height: 300px;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }
+    .productphoto img{
+        height: auto;
+        width: 300px;
+    }
+    .producttext{
+        width: 100%;
+    }
+    .producttext p{
+        font-size: 20px;
+    }
+  }

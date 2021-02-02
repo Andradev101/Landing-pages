@@ -51,46 +51,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.products{
-    width: 70%;
-    height: 400px;
-    background: linear-gradient(45deg, rgba(255,122,128,1) 0%, rgba(255,62,101,1) 100%);
-}
-.products{
-    margin-top: 10px;
-    border-radius: 10px;
-    display: flex;
-    padding: 10px;
-    overflow: hidden;
-    animation: left-appear 0.5s ease normal backwards;
-}
-.products .productphoto, .producttext{
-    border-radius: 10px;
-    margin: 0 5px 0 5px;
-    width: 50%;
-    height: 100%;
-    background-color: white;
-}
-.productphoto{
-    overflow: hidden;
-}
-.productphoto img{
-    width: 100%;
-    height: auto
-}
-.producttext{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-}
-.producttext p{
-    color: white;
-    font-family: "Montserrat";
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
 @keyframes left-appear{
     0.0%{
         transform: translate(-200px, 0);
