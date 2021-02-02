@@ -7,6 +7,7 @@ header{
     background: rgb(255,122,128);
     background: linear-gradient(270deg, rgba(255,122,128,1) 0%, rgba(255,62,101,1) 100%);
     transition: all 0.5s;
+    transform: translateX(-200px);
 }
 header:hover{
     background-color:rgba(255, 122, 128, 1);
@@ -54,7 +55,6 @@ button{
     font-size: 30px;
     background-color:rgba(255, 122, 128, 0.952);
     width: clamp(50px, 100px, 101px);
-    display: none;
     position: absolute;
     left: 190px;
     top: 250px;
