@@ -4,7 +4,8 @@ header{
     flex-direction: column;
     width: 200px;
     height: 100%;
-    background-color:rgba(255, 122, 128, 0.952);
+    background: rgb(255,122,128);
+    background: linear-gradient(270deg, rgba(255,122,128,1) 0%, rgba(255,62,101,1) 100%);
     transition: all 0.5s;
 }
 header:hover{
