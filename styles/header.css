@@ -53,7 +53,7 @@ button{
 #showbtn{
     font-size: 30px;
     background-color:rgba(255, 122, 128, 0.952);
-    width: 100px;
+    width: clamp(50px, 100px, 101px);
     display: none;
     position: absolute;
     left: 190px;
