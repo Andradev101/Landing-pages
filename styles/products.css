@@ -58,4 +58,7 @@
     .producttext{
         width: 100%;
     }
+    .producttext p{
+        margin: 20px;
+    }
   }

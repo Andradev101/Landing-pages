@@ -1,26 +1,87 @@
 .input-block{
+    width: 80%;
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
 }
 .input-block label{
+    align-self: flex-start;
+    margin-bottom: 5px;
+    width: 70px;
     font-family: "Montserrat";
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
-    text-align: center;
     color: rgb(255, 255, 255);
     transition: all 0.2s;
     text-transform: capitalize;
-    margin-right: 10px;
 }
 .input-block input{
+    width: 100%;
     font-family: "Montserrat";
     outline: none;
+    border: none;
     height: 30px;
-    width: 300px;
     border-radius: 10px;
+    padding: 10px;
 }
 .input-block~.input-block{
     margin-top: 10px;
+}
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 70%;
+    background: linear-gradient(180deg, rgba(255,122,128,1) 0%, rgba(255,62,101,1) 100%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    animation: left-appear 0.5s ease normal backwards;
+}
+#formbtn{
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    color: rgba(255,62,101,1);
+    transition: all 0.2s;
+}
+#formbtn:hover{
+    transform: scale(1.1); 
+}
+::placeholder{
+    font-size: 12px;
+    opacity: 0.7;
+    color: rgb(255, 133, 158);
+}
+@media screen and (max-width: 900px){
+    .input-block{
+        flex-direction: column;
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    .contact-card{
+        padding: 10px;
+        overflow: hidden;
+        width: 80%;
+    }
 }

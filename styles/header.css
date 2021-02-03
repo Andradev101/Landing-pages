@@ -54,7 +54,7 @@ button{
 #showbtn{
     font-size: 30px;
     background-color:rgba(255, 122, 128, 0.952);
-    width: clamp(50px, 100px, 101px);
+    width: 100px;
     position: absolute;
     left: 190px;
     top: 250px;
@@ -64,4 +64,9 @@ button{
 }
 #hidebtn{
     font-size: 30px;
+}
+@media screen and (max-width: 900px){
+    #showbtn{
+        width: 15vw;
+    }
 }
