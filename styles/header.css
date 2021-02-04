@@ -1,5 +1,5 @@
 header{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -52,17 +52,19 @@ button{
     outline:none;
 }
 #showbtn{
+    cursor: pointer;
     font-size: 30px;
     background-color:rgba(255, 122, 128, 0.952);
     width: 100px;
     position: absolute;
     left: 190px;
     top: 250px;
-    z-index: -2;
+    z-index: 2;
     transition: all 0.5s;
     border-radius: 0px 50px 50px 0;
 }
 #hidebtn{
+    cursor: pointer;
     font-size: 30px;
 }
 @media screen and (max-width: 900px){
