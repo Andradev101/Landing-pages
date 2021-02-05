@@ -9,9 +9,11 @@ var products = document.querySelectorAll("div.products");
 if (window.innerWidth < 500) {
     hidebtn.addEventListener("click", clickhideMobile);
     showbtn.addEventListener("click", clickshowMobile);
+    console.log("<500");
 } else {
     hidebtn.addEventListener("click", clickhide);
     showbtn.addEventListener("click", clickshow);
+    console.log(">500");
 }
 
 //desktop header
@@ -32,12 +34,15 @@ function clickshowMobile(){
     headerbtn[0].style.width="100%";
     headerbtn[0].style.position="absolute";
     headerbtn[0].style.height="150%";
+    showbtn.style.zIndex="-14";
     showbtn.style.opacity="0";
-    logo.style.width="80%";
+    logo.style.width="40vw";
     logo.style.margin="0 auto";
+    window.scrollTo(0, 0);
 }
 function clickhideMobile(){
     showbtn.style.display="initial";
+    headerbtn[0].style.position="fixed";
     showbtn.style.opacity="1";
     headerbtn[0].style.width="200px";
     headerbtn[0].style.transform="translateX(-200px)";

@@ -6,12 +6,25 @@
 html {
     height: 100%;
 }
-body{
-    /*backdrop-filter: grayscale(90%) blur(5px);*/
+.bg {
+    z-index: -222;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .bg:after {
+    content: ' ';
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     background-image: url(https://images.pexels.com/photos/4099237/pexels-photo-4099237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center;
-}
+    filter: blur(5px) grayscale(0.6);
+  }
 .main-content{
     display: flex;
     flex-direction: column;
