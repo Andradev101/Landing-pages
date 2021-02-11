@@ -26,6 +26,7 @@ header{
     font-weight: 500;
 }
 a{
+    width: 100%;
     font-family: "Montserrat";
     font-size: 20px;
     font-weight: 400;
@@ -66,6 +67,9 @@ button{
     font-size: 30px;
 }
 @media screen and (max-width: 900px){
+    a{
+        width: initial;
+    }
     #showbtn{
         width: 15vw;
     }
