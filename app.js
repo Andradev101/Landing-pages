@@ -23,6 +23,6 @@ app.get('/about', (req, res) =>{
 });
 
 //server listener
-app.listen(port,()=>{
+app.listen(PORT,()=>{
 console.log(`servidor aberto em: http://localhost:${port}`);
 })
