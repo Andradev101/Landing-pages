@@ -4,6 +4,7 @@ var logo = document.getElementById("logo");
 var headerbtn = document.getElementsByTagName("header");
 var maincontent = document.getElementsByClassName("main-content");
 var products = document.querySelectorAll("div.products");
+var inputs = document.querySelectorAll("div.input-block");
 
 //if screen <500 events goes as mobile
 if (window.innerWidth < 500) {
@@ -57,4 +58,10 @@ function clickhideMobile(){
     var delay = i*0.2;
     products[i].style.animationDelay=delay+"s"
     console.log(products[i])
+}
+    for (var i = 0; i < inputs.length; ++i) {
+    var item = inputs[i];
+    var delay = i*0.2;
+    inputs[i].style.animationDelay=delay+"s"
+    console.log(inputs[i])
 }

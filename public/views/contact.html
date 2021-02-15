@@ -38,20 +38,22 @@
             <p class="name">Contact</p>
             <div id="content">
                 <div class="contact-card">
-                    <div class="input-block">
-                        <label for="name">Name:</label>
-                        <input name="name" id="name" placeholder="Type your name">
+                    <form action="#">
+                        <div class="input-block">
+                            <label for="name">Name:</label>
+                            <input name="name" id="name" placeholder="Type your name">
+                        </div>
+                        <div class="input-block">
+                            <label for="email">E-mail:</label>
+                            <input name="email" id="email" type="email" placeholder="Type your email">
+                        </div>
+                        <div class="input-block">
+                            <label for="comment">Message:</label>
+                            <textarea name="comment" id="comment" rows="10" placeholder="Type your message"></textarea>
+                        </div>
+                        <button type="submit" id="formbtn">Submit</button>
                     </div>
-                    <div class="input-block">
-                        <label for="email">E-mail:</label>
-                        <input name="email" id="email" type="email" placeholder="Type your email">
-                    </div>
-                    <div class="input-block">
-                        <label for="comment">Message:</label>
-                        <textarea name="comment" id="comment" rows="10" placeholder="Type your message"></textarea>
-                    </div>
-                    <button type="submit" id="formbtn">Submit</button>
-                </div>
+                </form>
                 <div class="contact-card">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </div>
